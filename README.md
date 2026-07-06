@@ -1,11 +1,15 @@
 # So Dental — Patient Care Guide
 
-A modern, Apple-style single-page site with patient care instructions for braces and clear aligners, plus a curated list of recommended supplies.
+A modern, Apple-style patient education site for So Dental. Two cross-linked pages:
+- **Braces & clear aligners** care guide (`index.html`, Apple-blue theme)
+- **Dental implant post-op** guide (`implants.html`, healing-teal theme)
 
 ## Files
-- `index.html` — page content and structure
-- `styles.css` — styling (Apple-inspired, light + dark mode, responsive)
-- `app.js` — smooth scroll reveal, mobile menu toggle, footer year
+- `index.html` — braces & aligners page
+- `implants.html` — dental implant post-op page (Day 1 care, comfort & swelling, diet & hygiene, warning signs, soft-food shopping list, healing timeline)
+- `styles.css` — shared styling (Apple-inspired, light + dark mode, responsive) driving both pages
+- `implants.css` — small theme override loaded after `styles.css` on the implants page (teal color tokens only)
+- `app.js` — shared: smooth scroll reveal, mobile menu toggle, footer year (used by both pages)
 
 ## How to view
 Just open `index.html` in any browser:
@@ -19,12 +23,11 @@ No build step, no dependencies, no internet required (except the Amazon links).
 ## What to customise before publishing
 
 ### 1. Contact details (placeholders)
-Search the project for `REPLACE:` comments and update the phone/email in two places:
+Search the project for `REPLACE:` comments and update the phone/email. Both pages
+(`index.html` and `implants.html`) use the **same** placeholders — in each page's
+emergency callout (`#emergency-contact`) and footer — so one find-and-replace fixes both.
 
-- **`index.html`** — the emergency callout (`#emergency-contact`) and the footer.
-- Update both the `tel:+10000000000` links and the `mailto:hello@yourpractice.com` links, plus the visible text `(000) 000-0000`.
-
-Find & replace across the file:
+Find & replace across both HTML files:
 - `+10000000000` → your real number (digits only, e.g. `+15035551234`)
 - `(000) 000-0000` → your display number
 - `hello@yourpractice.com` → your real email

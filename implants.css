@@ -1,0 +1,41 @@
+/* ===================================================================
+   Implants page theme — Healing Teal / Emerald
+   Loaded AFTER styles.css; overrides only color tokens + hero gradient.
+   All layout/components are inherited from styles.css.
+   =================================================================== */
+
+:root {
+  --accent: #0f9d8f;        /* teal */
+  --accent-dark: #0b8377;   /* darker teal for hover */
+  --good: #1a8f4c;
+  --good-bg: #e8f6ee;
+  --bad: #c9372c;
+  --bad-bg: #fdecea;
+  --warn-bg: #fff6e6;
+  --warn-border: #f0c86a;
+}
+
+/* Teal-tinted nav + hero gradient */
+.hero {
+  background: radial-gradient(circle at 50% 0%, #e6f7f4 0%, var(--bg) 55%);
+}
+
+.hero__eyebrow { color: var(--accent); }
+
+/* Emergency callout keeps the dark base but gets a teal label accent */
+.callout--emergency .callout__label { color: #4fd6c4; }
+
+/* ===================== DARK MODE (teal) ===================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #3dd4c4;
+    --accent-dark: #2bbdad;
+    --good-bg: #12301f;
+    --bad-bg: #3a1512;
+    --warn-bg: #2a2110;
+    --warn-border: #5a4718;
+  }
+  .hero {
+    background: radial-gradient(circle at 50% 0%, #0c2b28 0%, var(--bg) 55%);
+  }
+}
