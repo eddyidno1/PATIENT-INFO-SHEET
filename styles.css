@@ -80,6 +80,28 @@ a { color: inherit; text-decoration: none; }
 .nav__links a.nav__cross { color: var(--accent); font-weight: 600; }
 .nav__links a.nav__cross:hover { color: var(--accent-dark); }
 
+/* right-side nav actions + EN/中文 language toggle (implant pages) */
+.nav__links { margin-left: auto; }
+.nav__actions { display: flex; align-items: center; gap: 14px; margin-left: 22px; }
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 980px;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 1;
+}
+.lang-toggle a {
+  padding: 6px 12px;
+  color: var(--text-soft);
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.lang-toggle a.is-active { background: var(--accent); color: #fff; }
+.lang-toggle a:not(.is-active):hover { color: var(--text); }
+
 .nav__toggle {
   display: none;
   flex-direction: column;
