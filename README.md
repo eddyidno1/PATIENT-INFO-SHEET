@@ -7,7 +7,7 @@ A modern, Apple-style patient education site for So Dental. Two cross-linked pag
 ## Files
 - `index.html` — braces & aligners page
 - `implants.html` — dental implant post-op page (Day 1 care, comfort & swelling, diet & hygiene, warning signs, soft-food shopping list, healing timeline)
-- `implants-zh.html` — Simplified Chinese (简体中文) translation of the implant page; an **EN / 中文** toggle in the nav switches between the two
+- `implants-zh.html` — Traditional Chinese (繁體中文) translation of the implant page; an **EN / 中文** toggle in the nav switches between the two
 - `styles.css` — shared styling (Apple-inspired, light + dark mode, responsive) driving both pages
 - `implants.css` — small theme override loaded after `styles.css` on the implants page (teal color tokens only)
 - `app.js` — shared: smooth scroll reveal, mobile menu toggle, footer year (used by both pages)
