@@ -1,0 +1,102 @@
+/* ===================================================================
+   Extraction page theme — Warm Coral / Sunset
+   Loaded AFTER styles.css; overrides color tokens + adds a few
+   "more interesting" flourishes (gradient title, badges, markers).
+   Scoped to extraction.html only, so nothing else is affected.
+   =================================================================== */
+
+:root {
+  --accent: #f2582f;        /* warm coral-orange */
+  --accent-dark: #d8481f;
+  --good: #1a8f4c;
+  --good-bg: #e9f7ee;
+  --bad: #c9372c;
+  --bad-bg: #fdece9;
+  --warn-bg: #fff4e6;
+  --warn-border: #f2b45a;
+}
+
+/* warm hero wash + gradient headline */
+.hero { background: radial-gradient(circle at 50% 0%, #ffece2 0%, var(--bg) 55%); }
+.hero__eyebrow { color: var(--accent); }
+.hero__title {
+  color: #f2582f; /* fallback if background-clip unsupported */
+  background: linear-gradient(115deg, #f2582f 0%, #ff8a3d 45%, #ff5470 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* vibrant gradient badges (white icon) */
+.badge {
+  background: linear-gradient(135deg, #f2582f, #ff8a3d);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(242, 88, 47, 0.28);
+}
+
+/* gradient primary buttons */
+.btn--primary { background: linear-gradient(135deg, #f2582f, #ff7a45); }
+.btn--primary:hover { background: linear-gradient(135deg, #e34c25, #f56a35); }
+
+/* gradient step numbers + timeline nodes */
+.steps__num,
+.timeline__marker { background: linear-gradient(135deg, #f2582f, #ff8a3d); }
+
+.callout--emergency .callout__label { color: #ffb59d; }
+
+/* ===================== COMPARE TABLE ===================== */
+.compare {
+  display: grid;
+  gap: 1px;
+  max-width: 960px;
+  margin: 0 auto;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.compare__head,
+.compare__row { display: grid; grid-template-columns: 0.8fr 1.1fr 1.1fr; }
+.compare__head > div,
+.compare__row > div { background: var(--card); padding: 15px 18px; }
+.compare__head > div:first-child,
+.compare__cat { background: var(--bg-alt); }
+
+.compare__th { font-weight: 700; font-size: 15px; }
+.compare__th--routine { color: var(--good); }
+.compare__th--wisdom { color: var(--accent); }
+
+.compare__cat { font-weight: 600; display: flex; align-items: center; }
+.compare__cell { font-size: 15px; color: var(--text-soft); }
+.compare__cell strong { color: var(--text); }
+.compare__cell::before { display: none; } /* labels only on mobile */
+
+@media (max-width: 720px) {
+  .compare__head { display: none; }
+  .compare__row { grid-template-columns: 1fr; }
+  .compare__cat { font-size: 17px; }
+  .compare__cell::before {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .compare__cell--routine::before { content: "Routine tooth"; color: var(--good); }
+  .compare__cell--wisdom::before { content: "Wisdom tooth"; color: var(--accent); }
+}
+
+/* ===================== DARK MODE (coral) ===================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #ff7a52;
+    --accent-dark: #ff9068;
+    --good-bg: #12301f;
+    --bad-bg: #3a1512;
+    --warn-bg: #2c2010;
+    --warn-border: #5c4419;
+  }
+  .hero { background: radial-gradient(circle at 50% 0%, #3a1a10 0%, var(--bg) 55%); }
+}
