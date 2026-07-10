@@ -20,6 +20,18 @@ links.querySelectorAll('a').forEach((a) => {
   });
 });
 
+// ===== Treatments dropdown: close on outside click or Escape =====
+document.addEventListener('click', (e) => {
+  document.querySelectorAll('.tdrop[open]').forEach((d) => {
+    if (!d.contains(e.target)) d.removeAttribute('open');
+  });
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.tdrop[open]').forEach((d) => d.removeAttribute('open'));
+  }
+});
+
 // ===== Scroll reveal =====
 const reveals = document.querySelectorAll('.reveal');
 
