@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="So Dental 病患照護指南 —— 如何清潔您的牙套與隱形牙套、可以吃什麼、緊急狀況處理、配戴橡皮筋，以及推薦用品的購買連結。" />
+  <title>So Dental — 病患照護指南</title>
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="So Dental 首頁">So Dental</a>
+
+      <nav class="nav__links" id="navLinks" aria-label="主導覽">
+        <a href="#process">療程</a>
+        <a href="#braces">牙套</a>
+        <a href="#aligners">隱形牙套</a>
+        <a href="#food">飲食</a>
+        <a href="#emergencies">緊急狀況</a>
+        <a href="#elastics">橡皮筋</a>
+        <a href="#shop">用品</a>
+        <a class="nav__cross" href="implants-zh.html">植牙術後 ↗</a>
+        <a class="nav__cross" href="extraction-zh.html">拔牙術後 ↗</a>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="lang-toggle" role="group" aria-label="語言">
+          <a href="index.html" lang="en">EN</a>
+          <a class="is-active" href="index-zh.html" aria-current="true">中文</a>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="切換選單" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">So Dental · 病患照護</p>
+      <h1 class="hero__title">您的笑容，<br />用心呵護。</h1>
+      <p class="hero__subtitle">一切所需，讓您的牙套與隱形牙套保持最佳狀態 —— 從每日清潔到突發狀況的處理。</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#braces">牙套照護</a>
+        <a class="btn btn--ghost" href="#aligners">隱形牙套照護</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 矯正療程 ===================== -->
+  <section class="section section--alt" id="process">
+    <div class="container">
+      <div class="section__head reveal">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v10a3 3 0 0 0 3 3h6a3 3 0 0 1 3 3"/><circle cx="6" cy="4" r="2"/><circle cx="18" cy="20" r="2"/></svg>
+        </div>
+        <h2>齒顎矯正療程</h2>
+        <p class="section__lead">一段有條理、悉心引導的旅程 —— 從第一次諮詢到自信整齊的笑容，讓治療清楚明瞭、舒適順利。</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__marker">1</div>
+          <div class="timeline__card">
+            <span class="timeline__when">開始</span>
+            <h3>諮詢與評估</h3>
+            <p>您在 So Dental 的矯正療程，會從詳細評估開始，包括檢查與必要的影像檢查，以了解您的齒列排列與咬合。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__marker">2</div>
+          <div class="timeline__card">
+            <span class="timeline__when">規劃</span>
+            <h3>治療規劃</h3>
+            <p>我們會制定個人化的治療計畫，說明建議的方式、預估的療程時間，以及治療的重要階段。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__marker">3</div>
+          <div class="timeline__card">
+            <span class="timeline__when">配戴</span>
+            <h3>裝上牙套</h3>
+            <p>仔細裝上牙套，並隨時間進行調整，引導牙齒移動。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__marker">4</div>
+          <div class="timeline__card">
+            <span class="timeline__when">療程中</span>
+            <h3>追蹤與調整</h3>
+            <p>定期回診以追蹤進度並視需要調整，讓療程按計畫進行。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__marker">5</div>
+          <div class="timeline__card">
+            <span class="timeline__when">療程後</span>
+            <h3>維持階段</h3>
+            <p>療程結束後，通常會建議配戴維持器，以維持已達成的整齊排列。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== 配戴牙套時的刷牙 ===================== -->
+  <section class="section" id="braces">
+    <div class="container">
+      <div class="section__head reveal">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5c-2.5 0-4 2-4 4.7 0 2.5.9 4 1.6 6.4.5 1.7.7 3.6 1.1 5.1.3 1.1 1.9 1.2 2.3.1.5-1.4.7-3.4 1.9-3.4s1.4 2 1.9 3.4c.4 1.1 2 1 2.3-.1.4-1.5.6-3.4 1.1-5.1.7-2.4 1.6-3.9 1.6-6.4 0-2.7-1.5-4.7-4-4.7-1.6 0-2.4.8-3.9.8S8.6 3.5 7 3.5Z"/></svg>
+        </div>
+        <h2>配戴牙套時的刷牙</h2>
+        <p class="section__lead">牙套會讓食物和牙菌斑卡在每個矯正器與矯正線周圍。細心的清潔習慣能保持牙齒健康，也讓療程如期進行。</p>
+      </div>
+
+      <ol class="steps reveal">
+        <li>
+          <span class="steps__num">1</span>
+          <div>
+            <h3>先漱口</h3>
+            <p>刷牙前先用清水漱口，鬆動卡在矯正器周圍的食物。</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__num">2</span>
+          <div>
+            <h3>以斜角刷牙</h3>
+            <p>將軟毛牙刷以 45° 對準牙齦邊緣。先刷矯正器上緣，再向下傾斜清潔矯正線下方。刷滿整整兩分鐘。</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__num">3</span>
+          <div>
+            <h3>清潔矯正器之間</h3>
+            <p>使用牙間刷（proxa 刷）清潔每個矯正器與牙齦邊緣之間、一般牙刷刷不到的小縫隙。</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__num">4</span>
+          <div>
+            <h3>每天用穿引器使用牙線</h3>
+            <p>用牙線穿引器把牙線穿到主矯正線下方，或使用超級牙線，再輕柔清潔每個接觸點。沖牙機也是很省時的好幫手。</p>
+          </div>
+        </li>
+        <li>
+          <span class="steps__num">5</span>
+          <div>
+            <h3>最後使用含氟產品</h3>
+            <p>用含氟漱口水漱口，保護矯正器周圍的琺瑯質，尤其是睡前。</p>
+          </div>
+        </li>
+      </ol>
+
+      <p class="tip reveal">💡 <strong>小提醒：</strong>盡量在每餐後刷牙。拆掉牙套後牙齒上出現的白斑，來自留在矯正器周圍的牙菌斑 —— 兩分鐘的清潔就能預防。</p>
+    </div>
+  </section>
+
+  <!-- ===================== 清潔隱形牙套 ===================== -->
+  <section class="section section--alt" id="aligners">
+    <div class="container">
+      <div class="section__head reveal">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9c0-2.5 3.6-4 8-4s8 1.5 8 4c0 1.8-.7 3-1.4 4.6-.6 1.5-.9 3-1.4 4.3-.4 1-1.7 1-2.1 0-.5-1.2-.8-2.6-2-2.6-.9 0-1.4.9-1.7 2.2"/><path d="M12 15.5v3M9 18l3 .5 3-.5"/></svg>
+        </div>
+        <h2>清潔您的隱形牙套</h2>
+        <p class="section__lead">隱形牙套每天在口中最多配戴 22 小時。用簡單的每日習慣，讓它保持清新與隱形。</p>
+      </div>
+
+      <div class="grid grid--2 reveal">
+        <div class="card">
+          <h3>每次取下時</h3>
+          <ul class="list">
+            <li>用<strong>冷水</strong>沖洗，洗去唾液與牙菌斑。</li>
+            <li>用軟毛牙刷輕輕刷 —— 不要用牙膏（牙膏有研磨性，會讓塑膠變霧）。</li>
+            <li>絕對不要用餐巾紙包著。請務必放進專用盒。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>每天一次深層清潔</h3>
+          <ul class="list">
+            <li>浸泡在專用清潔劑中（Retainer Brite、EverSmile，或清潔結晶溶液）。</li>
+            <li>想要更潔淨，可用超音波清潔機清洗。</li>
+            <li>放回口中前徹底沖洗乾淨。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout--warn reveal">
+        <strong>絕對不要用熱水。</strong>高溫會使塑膠變形、破壞密合度。避免有色漱口水、非隱形牙套專用的假牙清潔劑，以及研磨性牙膏 —— 它們會造成染色與霧化。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 飲食 ===================== -->
+  <section class="section" id="food">
+    <div class="container">
+      <div class="section__head reveal">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v7a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V3M7 12v9M17 3c-1.7 0-3 2-3 5s1.3 4 3 4v9"/></svg>
+        </div>
+        <h2>配戴牙套時的飲食</h2>
+        <p class="section__lead">大部分您喜愛的食物仍在菜單上。只要保護矯正器和矯正線，避開任何堅硬、黏牙或耐嚼的食物。</p>
+      </div>
+
+      <div class="grid grid--2 reveal">
+        <div class="card card--good">
+          <h3><span class="pill pill--good">適合</span></h3>
+          <ul class="list list--check">
+            <li>軟麵包、義大利麵、米飯</li>
+            <li>優格、乳酪、奶昔</li>
+            <li>蒸煮或煮軟的蔬菜</li>
+            <li>香蕉、莓果、軟質水果</li>
+            <li>嫩肉、魚、蛋、豆腐</li>
+            <li>冰淇淋與軟質甜點</li>
+          </ul>
+        </div>
+        <div class="card card--bad">
+          <h3><span class="pill pill--bad">避免</span></h3>
+          <ul class="list list--cross">
+            <li>硬糖、堅果、冰塊</li>
+            <li>口香糖、焦糖、太妃糖</li>
+            <li>爆米花（玉米粒會弄壞矯正線）</li>
+            <li>整顆蘋果與帶棒玉米</li>
+            <li>硬皮貝果與硬麵包</li>
+            <li>耐嚼的肉乾與硬脆餅</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="tip reveal">💡 <strong>小提醒：</strong>您不必完全放棄較硬的食物 —— 把蘋果、紅蘿蔔和玉米切成小塊，用後排牙齒咀嚼。</p>
+    </div>
+  </section>
+
+  <!-- ===================== 緊急狀況 ===================== -->
+  <section class="section section--alt" id="emergencies">
+    <div class="container">
+      <div class="section__head reveal">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg>
+        </div>
+        <h2>緊急狀況處理</h2>
+        <p class="section__lead">真正的矯正緊急狀況很少見。多數問題都能等到看診時間 —— 以下是在那之前保持舒適的方法。</p>
+      </div>
+
+      <h3 class="subhead reveal">牙套方面</h3>
+      <div class="grid grid--3 reveal">
+        <div class="card">
+          <h4>刺人的矯正線</h4>
+          <p>在末端蓋上一小塊矯正蠟。若仍會刺，可用鉛筆的橡皮擦端輕輕把它壓平。</p>
+        </div>
+        <div class="card">
+          <h4>矯正器鬆動或脫落</h4>
+          <p>若仍在矯正線上，先別動並用矯正蠟蓋住。若脫落了，請保留並致電我們安排修復。</p>
+        </div>
+        <div class="card">
+          <h4>一般痠痛</h4>
+          <p>調整後幾天內屬正常。用溫鹽水漱口，並使用您平常的成藥止痛。</p>
+        </div>
+        <div class="card">
+          <h4>分牙器掉了</h4>
+          <p>臼齒間的小分牙器可能在接近下次回診時自行掉出。請告知我們以便檢查。</p>
+        </div>
+        <div class="card">
+          <h4>食物或異物卡住</h4>
+          <p>試試牙線、牙間刷或沖牙機。不要用尖銳物品抵住牙齒。</p>
+        </div>
+        <div class="card">
+          <h4>無法自行解決時</h4>
+          <p>有疑慮時別勉強 —— 請致電診所，我們會引導您處理。</p>
+        </div>
+      </div>
+
+      <h3 class="subhead reveal">隱形牙套方面</h3>
+      <div class="grid grid--3 reveal">
+        <div class="card">
+          <h4>牙套遺失或破損</h4>
+          <p>先換回<strong>前一副</strong>以維持進度，再致電我們。未先確認前，不要直接跳到下一副。</p>
+        </div>
+        <div class="card">
+          <h4>牙套無法貼合</h4>
+          <p>用咬膠在所有牙齒上用力咬幾分鐘。若仍無法貼合，退回前一副並致電我們。</p>
+        </div>
+        <div class="card">
+          <h4>邊緣尖銳或粗糙</h4>
+          <p>用乾淨的指甲銼或磨甲棒輕輕磨平。再次配戴前徹底沖洗。</p>
+        </div>
+      </div>
+
+      <div class="callout callout--emergency reveal" id="emergency-contact">
+        <div>
+          <p class="callout__label">現在需要協助嗎？</p>
+          <p class="callout__text">臉部腫脹、外傷、無法止住的出血或劇烈疼痛需要及時處理 —— 請立即致電我們。</p>
+        </div>
+        <div class="callout__contact">
+          <!-- REPLACE: emergency phone & email -->
+          <a class="btn btn--primary" href="tel:+10000000000">致電 (000) 000-0000</a>
+          <a class="btn btn--ghost" href="mailto:hello@yourpractice.com">hello@yourpractice.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 附著物脫落 ===================== -->
+  <section class="section" id="attachment">
+    <div class="container">
+      <div class="section__head reveal">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="10" rx="3"/><path d="M9 7V5m6 2V5M9 17v2m6-2v2"/></svg>
+        </div>
+        <h2>若附著物脫落</h2>
+        <p class="section__lead">附著物是黏在部分牙齒上、與牙齒同色的小「凸點」。它們讓隱形牙套有可以抓握的地方，以精準地移動牙齒。</p>
+      </div>
+
+      <div class="grid grid--2 reveal">
+        <div class="card">
+          <h3>會有什麼感覺</h3>
+          <p>您可能用舌頭感覺到粗糙處，或看到牙套與牙齒之間、原本凸點所在的位置出現小縫隙。通常不會疼痛。</p>
+        </div>
+        <div class="card">
+          <h3>該怎麼做</h3>
+          <ul class="list">
+            <li>別緊張 —— 附著物脫落<strong>不是</strong>緊急狀況。</li>
+            <li>照常全時間配戴您的隱形牙套。</li>
+            <li>若殘留尖銳邊緣，用指甲銼磨平。</li>
+            <li>致電我們，在方便時安排快速重新黏著。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 橡皮筋 ===================== -->
+  <section class="section section--alt" id="elastics">
+    <div class="container">
+      <div class="section__head reveal">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="8" ry="5"/><path d="M12 7v10"/></svg>
+        </div>
+        <h2>配戴您的橡皮筋</h2>
+        <p class="section__lead">橡皮筋（rubber bands）擔負調整咬合的重責大任。它們只有在配戴時才有效 —— 持之以恆最重要。</p>
+      </div>
+
+      <div class="grid grid--3 reveal">
+        <div class="card">
+          <h4>戴多久</h4>
+          <p>每天配戴約 22 小時 —— 整天與過夜都要戴。只有在吃東西和刷牙時才取下。</p>
+        </div>
+        <div class="card">
+          <h4>如何掛</h4>
+          <p>依我們示範的方式，把每條橡皮筋在上下掛鉤之間拉開掛好。用塑膠掛橡皮筋工具會更容易。</p>
+        </div>
+        <div class="card">
+          <h4>勤更換</h4>
+          <p>每天更換 3–4 次新的橡皮筋。橡皮筋很快就會失去彈性，無力的橡皮筋無法移動牙齒。</p>
+        </div>
+        <div class="card">
+          <h4>若斷掉</h4>
+          <p>換一條新的即可。請隨身攜帶幾條備用 —— 每次回診我們都會為您補充。</p>
+        </div>
+        <div class="card">
+          <h4>若忘記戴</h4>
+          <p>不要為了「補回來」而加倍配戴。只要重新回到正軌即可。中斷幾天可能會讓療程延長數週。</p>
+        </div>
+        <div class="card">
+          <h4>一開始會痠嗎？</h4>
+          <p>頭幾天的觸痛屬正常，代表它們正在發揮作用。隨著牙齒適應會逐漸緩解。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 推薦用品 ===================== -->
+  <section class="section" id="shop">
+    <div class="container">
+      <div class="section__head reveal">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l-1.2 11a2 2 0 0 1-2 1.8H7.2a2 2 0 0 1-2-1.8L4 7Z"/><path d="M8.5 7a3.5 3.5 0 0 1 7 0"/></svg>
+        </div>
+        <h2>推薦用品</h2>
+        <p class="section__lead">我們建議用來保養牙套與隱形牙套的工具。連結會在新分頁開啟 Amazon。</p>
+      </div>
+
+      <div class="grid grid--cards reveal">
+        <article class="product">
+          <div class="product__icon" aria-hidden="true">🦷</div>
+          <h3>咬膠（chewies）</h3>
+          <p>柔軟的泡棉墊，咬下去能讓隱形牙套完全就位、貼合追蹤。</p>
+          <a class="btn btn--primary btn--sm" href="https://www.amazon.com/s?k=aligner+chewies" target="_blank" rel="noopener">在 Amazon 購買 →</a>
+        </article>
+
+        <article class="product">
+          <div class="product__icon" aria-hidden="true">🔑</div>
+          <h3>隱形牙套取下器</h3>
+          <p>帶鉤的工具，能俐落地取下牙套 —— 對指甲和附著物都更溫和。</p>
+          <a class="btn btn--primary btn--sm" href="https://www.amazon.com/s?k=clear+aligner+removal+tool" target="_blank" rel="noopener">在 Amazon 購買 →</a>
+        </article>
+
+        <article class="product">
+          <div class="product__icon" aria-hidden="true">🌊</div>
+          <h3>超音波清潔機</h3>
+          <p>小型清潔槽，用聲波在幾分鐘內深層清潔牙套與維持器。</p>
+          <a class="btn btn--primary btn--sm" href="https://www.amazon.com/s?k=ultrasonic+cleaner+retainer+aligner" target="_blank" rel="noopener">在 Amazon 購買 →</a>
+        </article>
+
+        <article class="product">
+          <div class="product__icon" aria-hidden="true">✨</div>
+          <h3>清潔錠</h3>
+          <p>Retainer Brite 或類似的浸泡清潔錠，讓牙套保持清透無異味。</p>
+          <a class="btn btn--primary btn--sm" href="https://www.amazon.com/s?k=retainer+brite+cleaning+tablets" target="_blank" rel="noopener">在 Amazon 購買 →</a>
+        </article>
+
+        <article class="product">
+          <div class="product__icon" aria-hidden="true">🫧</div>
+          <h3>隱形牙套清潔泡沫</h3>
+          <p>EverSmile WhiteFoam 等清潔泡沫，配戴時同時清潔並溫和美白。</p>
+          <a class="btn btn--primary btn--sm" href="https://www.amazon.com/s?k=eversmile+whitefoam+aligner" target="_blank" rel="noopener">在 Amazon 購買 →</a>
+        </article>
+
+        <article class="product">
+          <div class="product__icon" aria-hidden="true">🕯️</div>
+          <h3>矯正蠟</h3>
+          <p>覆蓋刺人的矯正線或粗糙的矯正器，讓臉頰和嘴唇保持舒適。</p>
+          <a class="btn btn--primary btn--sm" href="https://www.amazon.com/s?k=orthodontic+wax" target="_blank" rel="noopener">在 Amazon 購買 →</a>
+        </article>
+
+        <article class="product">
+          <div class="product__icon" aria-hidden="true">🪥</div>
+          <h3>牙間刷</h3>
+          <p>proxa 刷能清潔矯正器之間與牙齦邊緣的狹小縫隙。</p>
+          <a class="btn btn--primary btn--sm" href="https://www.amazon.com/s?k=interdental+brushes+braces" target="_blank" rel="noopener">在 Amazon 購買 →</a>
+        </article>
+
+        <article class="product">
+          <div class="product__icon" aria-hidden="true">🧵</div>
+          <h3>牙線穿引器</h3>
+          <p>引導牙線穿到主矯正線下方，讓您戴牙套也能清潔每顆牙。</p>
+          <a class="btn btn--primary btn--sm" href="https://www.amazon.com/s?k=floss+threaders+braces" target="_blank" rel="noopener">在 Amazon 購買 →</a>
+        </article>
+
+        <article class="product">
+          <div class="product__icon" aria-hidden="true">💦</div>
+          <h3>沖牙機</h3>
+          <p>沖走矯正器周圍的食物與牙菌斑 —— 每日清潔的快速升級。</p>
+          <a class="btn btn--primary btn--sm" href="https://www.amazon.com/s?k=water+flosser" target="_blank" rel="noopener">在 Amazon 購買 →</a>
+        </article>
+      </div>
+
+      <p class="disclaimer reveal">這些是廣泛販售產品的一般性建議 —— 並非對任何特定品牌或賣家的背書。作為 Amazon 聯盟會員，本診所可能從符合資格的購買中獲得回饋。請務必遵循您矯正醫師的具體指示。</p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__brand">So Dental</p>
+        <p class="footer__contact">
+          <!-- REPLACE: office phone & email -->
+          <a href="tel:+10000000000">(000) 000-0000</a> · <a href="mailto:hello@yourpractice.com">hello@yourpractice.com</a>
+        </p>
+      </div>
+      <p class="footer__contact"><a href="implants-zh.html">植牙術後</a> · <a href="extraction-zh.html">拔牙術後</a></p>
+      <p class="footer__note">本指南僅提供一般性資訊，不能替代您矯正醫師的專業建議。如有任何疑問，請致電診所。</p>
+      <p class="footer__copy">© <span id="year"></span> So Dental. 版權所有。</p>
+    </div>
+  </footer>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>

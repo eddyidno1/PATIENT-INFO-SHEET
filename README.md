@@ -5,7 +5,8 @@ A modern, Apple-style patient education site for So Dental. Two cross-linked pag
 - **Dental implant post-op** guide (`implants.html`, healing-teal theme)
 
 ## Files
-- `index.html` — braces & aligners page
+- `index.html` — braces & aligners page (English)
+- `index-zh.html` — Traditional Chinese (繁體中文) translation of the braces & aligners page; **EN / 中文** toggle switches between them
 - `implants.html` — dental implant post-op page (Day 1 care, comfort & swelling, diet & hygiene, warning signs, soft-food shopping list, healing timeline)
 - `implants-zh.html` — Traditional Chinese (繁體中文) translation of the implant page; an **EN / 中文** toggle in the nav switches between the two
 - `extraction.html` — tooth-extraction aftercare page (warm-coral theme): protect the clot, first 24–48h, routine-vs-wisdom comparison table, eating, recovery timeline, warning signs
