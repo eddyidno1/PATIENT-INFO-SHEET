@@ -1,0 +1,140 @@
+/* ===================================================================
+   Periodontal page theme — Royal Violet / Plum
+   Loaded AFTER styles.css; overrides color tokens, adds gradient
+   flourishes, a LEFT-ALIGNED editorial header layout, and two new
+   components (.phase, .split). Scoped to perio pages only.
+   =================================================================== */
+
+:root {
+  --accent: #7c3aed;        /* royal violet */
+  --accent-dark: #6528d6;
+  --good: #1a8f4c;
+  --good-bg: #e9f7ee;
+  --bad: #c9372c;
+  --bad-bg: #fdece9;
+  --warn-bg: #fff4e6;
+  --warn-border: #f2b45a;
+}
+
+/* lavender hero wash + gradient headline */
+.hero { background: radial-gradient(circle at 50% 0%, #f1ecfe 0%, var(--bg) 55%); }
+.hero__eyebrow { color: var(--accent); }
+.hero__title {
+  color: #7c3aed; /* fallback */
+  background: linear-gradient(115deg, #7c3aed 0%, #a855f7 50%, #d6409f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* vibrant gradient badges (white icon) */
+.badge {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(124, 58, 237, 0.28);
+}
+
+.btn--primary { background: linear-gradient(135deg, #7c3aed, #9333ea); }
+.btn--primary:hover { background: linear-gradient(135deg, #6b2fd6, #7f22d8); }
+
+.steps__num { background: linear-gradient(135deg, #7c3aed, #a855f7); }
+
+.callout--emergency .callout__label { color: #d9b6ff; }
+
+/* ===================== LEFT-ALIGNED EDITORIAL HEADERS ===================== */
+/* Distinct from the centered headers on the other three guides. */
+.section__head {
+  text-align: left;
+  max-width: 760px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.section__head .badge { margin: 0 0 18px; }
+.section__head h2 { position: relative; padding-bottom: 14px; }
+.section__head h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #7c3aed, #d6409f);
+}
+.subhead { text-align: left; }
+
+/* ===================== PHASE COMPONENT (hygiene timeline) ===================== */
+.phase { display: grid; gap: 20px; max-width: 960px; }
+.phase__item {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.phase__band {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(214, 64, 159, 0.08));
+  border-bottom: 1px solid var(--border);
+}
+.phase__when {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.phase__title { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
+.phase__body { padding: 20px 24px; }
+.phase__body .list { margin: 0; }
+
+/* ===================== SPLIT COMPONENT (normal vs warning) ===================== */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.split__panel {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.split__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 22px;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+}
+.split__head svg { width: 20px; height: 20px; }
+.split__panel--ok .split__head { background: linear-gradient(135deg, #1a8f4c, #22b463); }
+.split__panel--alert .split__head { background: linear-gradient(135deg, #7c3aed, #d6409f); }
+.split__body { padding: 20px 22px; }
+.split__body dl { margin: 0; }
+.split__body dt { font-weight: 600; margin-top: 14px; }
+.split__body dt:first-child { margin-top: 0; }
+.split__body dd { margin: 4px 0 0; color: var(--text-soft); font-size: 15px; }
+.split__body .list { margin: 0; }
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 720px) {
+  .split { grid-template-columns: 1fr; }
+  .section__head h2::after { left: 0; }
+}
+
+/* ===================== DARK MODE (violet) ===================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #a78bfa;
+    --accent-dark: #b9a3fb;
+    --good-bg: #12301f;
+    --bad-bg: #3a1512;
+    --warn-bg: #2c2010;
+    --warn-border: #5c4419;
+  }
+  .hero { background: radial-gradient(circle at 50% 0%, #1e1440 0%, var(--bg) 55%); }
+  .phase__band { background: linear-gradient(135deg, rgba(167, 139, 250, 0.14), rgba(214, 64, 159, 0.1)); }
+}

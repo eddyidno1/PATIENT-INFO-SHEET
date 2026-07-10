@@ -12,8 +12,10 @@ A modern, Apple-style patient education site for So Dental. Two cross-linked pag
 - `extraction.html` — tooth-extraction aftercare page (warm-coral theme): protect the clot, first 24–48h, routine-vs-wisdom comparison table, eating, recovery timeline, warning signs
 - `extraction-zh.html` — Traditional Chinese (繁體中文) translation of the extraction page; **EN / 中文** toggle switches between them
 - `extraction.css` — warm-coral theme override + `.compare` table component (loaded after `styles.css` on both extraction pages)
+- `perio.html` / `perio-zh.html` — periodontal (gum) aftercare page + Traditional Chinese version (violet theme, left-aligned editorial layout): first 24h, diet, phased hygiene routine, normal-vs-warning split panel, long-term maintenance
+- `perio.css` — royal-violet theme override + `.phase` and `.split` layout components (loaded after `styles.css` on both perio pages)
 
-All three treatment guides (braces, implants, extractions) cross-link to each other from the top nav.
+All four treatment guides (braces, implants, extractions, perio) cross-link to each other from the top nav, and each has an EN / 中文 (繁體中文) version.
 - `styles.css` — shared styling (Apple-inspired, light + dark mode, responsive) driving both pages
 - `implants.css` — small theme override loaded after `styles.css` on the implants page (teal color tokens only)
 - `app.js` — shared: smooth scroll reveal, mobile menu toggle, footer year (used by both pages)
