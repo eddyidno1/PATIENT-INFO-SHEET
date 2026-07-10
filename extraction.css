@@ -86,6 +86,8 @@
   }
   .compare__cell--routine::before { content: "Routine tooth"; color: var(--good); }
   .compare__cell--wisdom::before { content: "Wisdom tooth"; color: var(--accent); }
+  [lang="zh-Hant"] .compare__cell--routine::before { content: "一般牙齒"; }
+  [lang="zh-Hant"] .compare__cell--wisdom::before { content: "智齒"; }
 }
 
 /* ===================== DARK MODE (coral) ===================== */
