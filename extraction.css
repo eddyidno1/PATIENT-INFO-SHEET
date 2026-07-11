@@ -101,6 +101,14 @@
     font-size: 16px;
     font-weight: 700;
     padding: 13px 18px;
+    gap: 9px;
+  }
+  .compare__cat::before {
+    content: "";
+    flex: none;
+    width: 18px;
+    height: 18px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 6h11M8 12h11M8 18h11M3.5 6h.01M3.5 12h.01M3.5 18h.01'/%3E%3C/svg%3E") center / contain no-repeat;
   }
   .compare__cell { padding: 15px 18px; }
   .compare__cell--routine { border-bottom: 1px solid var(--border); }
