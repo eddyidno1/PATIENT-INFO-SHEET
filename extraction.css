@@ -98,22 +98,27 @@
   .compare__cat {
     background: var(--accent);
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    padding: 13px 18px;
+    letter-spacing: -0.01em;
+    padding: 15px 20px;
   }
-  .compare__cell { padding: 15px 18px; }
+  .compare__cell { padding: 16px 20px; }
   .compare__cell--routine { border-bottom: 1px solid var(--border); }
+  /* Routine/Wisdom shown as small pill tags so they read as labels, not titles */
   .compare__cell::before {
-    display: block;
-    font-size: 12px;
+    display: inline-block;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 9px;
   }
-  .compare__cell--routine::before { content: "Routine tooth"; color: var(--good); }
-  .compare__cell--wisdom::before { content: "Wisdom tooth"; color: var(--accent); }
+  .compare__cell--routine::before { content: "Routine tooth"; background: var(--good); }
+  .compare__cell--wisdom::before { content: "Wisdom tooth"; background: var(--accent); }
   [lang="zh-Hant"] .compare__cell--routine::before { content: "一般牙齒"; }
   [lang="zh-Hant"] .compare__cell--wisdom::before { content: "智齒"; }
 }
