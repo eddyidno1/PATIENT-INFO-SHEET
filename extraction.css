@@ -73,16 +73,44 @@
 .compare__cell::before { display: none; } /* labels only on mobile */
 
 @media (max-width: 720px) {
+  /* Each category becomes its own card with a bold accent header band,
+     so the title (Diet, Swelling…) is clearly separate from its content. */
+  .compare {
+    display: block;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+  }
   .compare__head { display: none; }
-  .compare__row { grid-template-columns: 1fr; }
-  .compare__cat { font-size: 17px; }
+  .compare__row {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .compare__row:last-child { margin-bottom: 0; }
+  .compare__row > div { background: transparent; }
+  .compare__cat {
+    background: var(--accent);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 18px;
+  }
+  .compare__cell { padding: 15px 18px; }
+  .compare__cell--routine { border-bottom: 1px solid var(--border); }
   .compare__cell::before {
     display: block;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
   .compare__cell--routine::before { content: "Routine tooth"; color: var(--good); }
   .compare__cell--wisdom::before { content: "Wisdom tooth"; color: var(--accent); }
