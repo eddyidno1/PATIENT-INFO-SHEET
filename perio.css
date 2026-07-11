@@ -125,16 +125,14 @@
   .section__head h2::after { left: 0; }
 }
 
-/* ===================== DARK MODE (violet) ===================== */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent: #a78bfa;
-    --accent-dark: #b9a3fb;
-    --good-bg: #12301f;
-    --bad-bg: #3a1512;
-    --warn-bg: #2c2010;
-    --warn-border: #5c4419;
-  }
-  .hero { background: radial-gradient(circle at 50% 0%, #1e1440 0%, var(--bg) 55%); }
-  .phase__band { background: linear-gradient(135deg, rgba(167, 139, 250, 0.14), rgba(214, 64, 159, 0.1)); }
+/* ===================== DARK THEME (violet, always on) ===================== */
+:root {
+  --accent: #a78bfa;
+  --accent-dark: #b9a3fb;
+  --good-bg: #12301f;
+  --bad-bg: #3a1512;
+  --warn-bg: #2c2010;
+  --warn-border: #5c4419;
 }
+.hero { background: radial-gradient(circle at 50% 0%, #1e1440 0%, var(--bg) 55%); }
+.phase__band { background: linear-gradient(135deg, rgba(167, 139, 250, 0.14), rgba(214, 64, 159, 0.1)); }

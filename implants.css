@@ -25,17 +25,15 @@
 /* Emergency callout keeps the dark base but gets a teal label accent */
 .callout--emergency .callout__label { color: #4fd6c4; }
 
-/* ===================== DARK MODE (teal) ===================== */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent: #3dd4c4;
-    --accent-dark: #2bbdad;
-    --good-bg: #12301f;
-    --bad-bg: #3a1512;
-    --warn-bg: #2a2110;
-    --warn-border: #5a4718;
-  }
-  .hero {
-    background: radial-gradient(circle at 50% 0%, #0c2b28 0%, var(--bg) 55%);
-  }
+/* ===================== DARK THEME (teal, always on) ===================== */
+:root {
+  --accent: #3dd4c4;
+  --accent-dark: #2bbdad;
+  --good-bg: #12301f;
+  --bad-bg: #3a1512;
+  --warn-bg: #2a2110;
+  --warn-border: #5a4718;
+}
+.hero {
+  background: radial-gradient(circle at 50% 0%, #0c2b28 0%, var(--bg) 55%);
 }
