@@ -115,7 +115,6 @@
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 720px) {
   .split { grid-template-columns: 1fr; }
-  .section__head h2::after { left: 0; }
 }
 
 /* ===================== DARK THEME (violet, always on) ===================== */
