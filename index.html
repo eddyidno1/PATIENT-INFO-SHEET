@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="So Dental patient care guide — how to care for your braces and clear aligners, what to eat, handling emergencies, and wearing elastics." />
-  <title>So Dental — Patient Care Guide</title>
+  <meta name="description" content="So Dental braces care guide — the braces treatment process, brushing with braces, what to eat, handling emergencies, and wearing elastics." />
+  <title>So Dental — Braces Care</title>
   <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="braces.css?v=2" />
 </head>
 <body>
 
@@ -16,15 +17,15 @@
 
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="#process">Process</a>
-        <a href="#braces">Braces</a>
-        <a href="#aligners">Aligners</a>
+        <a href="#braces">Brushing</a>
         <a href="#food">Food</a>
         <a href="#emergencies">Emergencies</a>
         <a href="#elastics">Elastics</a>
         <details class="tdrop">
           <summary>Treatments</summary>
           <div class="tdrop__menu">
-            <a class="is-current" aria-current="page" href="index.html">Braces &amp; Aligners</a>
+            <a class="is-current" aria-current="page" href="index.html">Braces</a>
+            <a href="aligners.html">Clear Aligners</a>
             <a href="implants.html">Dental Implants</a>
             <a href="extraction.html">Tooth Extraction</a>
             <a href="perio.html">Periodontal Care</a>
@@ -47,12 +48,12 @@
   <!-- ===================== HERO ===================== -->
   <section class="hero">
     <div class="hero__content reveal">
-      <p class="hero__eyebrow">So Dental · Patient Care</p>
-      <h1 class="hero__title">Your smile,<br />cared for.</h1>
-      <p class="hero__subtitle">Everything you need to keep your braces and clear aligners in perfect shape — from daily cleaning to handling the unexpected.</p>
+      <p class="hero__eyebrow">So Dental · Braces Care</p>
+      <h1 class="hero__title">Your braces,<br />cared for.</h1>
+      <p class="hero__subtitle">Everything you need to keep your braces in perfect shape — from daily cleaning to handling the unexpected.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#braces">Braces care</a>
-        <a class="btn btn--ghost" href="#aligners">Aligner care</a>
+        <a class="btn btn--primary" href="#braces">Brushing</a>
+        <a class="btn btn--ghost" href="#process">The process</a>
       </div>
     </div>
   </section>
@@ -65,11 +66,10 @@
           <!-- route / journey icon -->
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v10a3 3 0 0 0 3 3h6a3 3 0 0 1 3 3"/><circle cx="6" cy="4" r="2"/><circle cx="18" cy="20" r="2"/></svg>
         </div>
-        <h2>The orthodontic treatment journey</h2>
-        <p class="section__lead">A structured, carefully guided path from your first visit to a confident, aligned smile — whether you're treated with fixed braces or removable clear aligners. Here's what to expect with each.</p>
+        <h2>The orthodontic braces process</h2>
+        <p class="section__lead">A structured, carefully guided path from your first visit to a confident, aligned smile. Here's what to expect with braces.</p>
       </div>
 
-      <h3 class="subhead reveal">With braces</h3>
       <ol class="timeline">
         <li class="timeline__item reveal">
           <div class="timeline__marker">1</div>
@@ -109,50 +109,6 @@
             <span class="timeline__when">Aftercare</span>
             <h3>Retention phase</h3>
             <p>Following treatment, retainers are commonly recommended to help maintain the alignment achieved.</p>
-          </div>
-        </li>
-      </ol>
-
-      <h3 class="subhead reveal">With clear aligners</h3>
-      <ol class="timeline">
-        <li class="timeline__item reveal">
-          <div class="timeline__marker">1</div>
-          <div class="timeline__card">
-            <span class="timeline__when">Getting started</span>
-            <h3>Consultation &amp; assessment</h3>
-            <p>Your clear aligner journey begins just like braces — with a thorough consultation and assessment. We examine your teeth, gums and bite, take any scans, photographs and X-rays we need, and talk through your goals to confirm that clear aligners are the right choice for you.</p>
-          </div>
-        </li>
-        <li class="timeline__item reveal">
-          <div class="timeline__marker">2</div>
-          <div class="timeline__card">
-            <span class="timeline__when">About 2 weeks later</span>
-            <h3>Treatment plan &amp; simulation approval</h3>
-            <p>Around two weeks after your consultation, your personalised plan is ready. Using a digital 3D scan of your teeth, we show you a simulation of how they'll move — step by step — from where they are today to the final result, and walk you through the planned movements and the expected treatment duration. Once you're happy with the plan, you approve it so your custom aligners can be manufactured.</p>
-          </div>
-        </li>
-        <li class="timeline__item reveal">
-          <div class="timeline__marker">3</div>
-          <div class="timeline__card">
-            <span class="timeline__when">3–4 weeks later</span>
-            <h3>Start your treatment</h3>
-            <p>About three to four weeks later, your custom-made aligners are ready and treatment begins. At this visit we bond any small tooth-coloured attachments that help guide your teeth, fit your first set of aligners, and show you exactly how to insert, remove, wear and clean them — including how many hours a day to wear each set.</p>
-          </div>
-        </li>
-        <li class="timeline__item reveal">
-          <div class="timeline__marker">4</div>
-          <div class="timeline__card">
-            <span class="timeline__when">Every 4–8 weeks</span>
-            <h3>Regular checks</h3>
-            <p>Throughout treatment you'll come in for regular progress checks, usually every four to eight weeks. We make sure your teeth are tracking to plan, hand over your next sets of aligners, and make any small refinements needed to keep everything on course.</p>
-          </div>
-        </li>
-        <li class="timeline__item reveal">
-          <div class="timeline__marker">5</div>
-          <div class="timeline__card">
-            <span class="timeline__when">Aftercare</span>
-            <h3>Retention</h3>
-            <p>Once your teeth have reached their final position, we move into the retention phase. To keep your new smile stable and stop your teeth drifting back, we provide retainers and explain how and when to wear them for a lasting result.</p>
           </div>
         </li>
       </ol>
@@ -213,65 +169,8 @@
     </div>
   </section>
 
-  <!-- ===================== CLEANING ALIGNERS ===================== -->
-  <section class="section section--alt" id="aligners">
-    <div class="container">
-      <div class="section__head reveal">
-        <div class="badge" aria-hidden="true">
-          <!-- aligner / sparkle icon -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9c0-2.5 3.6-4 8-4s8 1.5 8 4c0 1.8-.7 3-1.4 4.6-.6 1.5-.9 3-1.4 4.3-.4 1-1.7 1-2.1 0-.5-1.2-.8-2.6-2-2.6-.9 0-1.4.9-1.7 2.2"/><path d="M12 15.5v3M9 18l3 .5 3-.5"/></svg>
-        </div>
-        <h2>Wearing &amp; caring for your aligners</h2>
-        <p class="section__lead">Clear aligners only work when you wear them — and stay invisible when you look after them. Here's how to wear, clean, and store them day to day.</p>
-      </div>
-
-      <div class="grid grid--3 reveal">
-        <div class="card">
-          <h4>Wear them 22 hours a day</h4>
-          <p>Wearing your aligners at least 22 hours a day is the single most important factor in effective treatment. Only take them out to eat, to drink anything other than water, and to clean your teeth.</p>
-        </div>
-        <div class="card">
-          <h4>Cold water is fine</h4>
-          <p>You don't need to remove your aligners to drink cold or room-temperature water. Avoid hot drinks with them in, though — heat warps the plastic.</p>
-        </div>
-        <div class="card">
-          <h4>Rinse every time</h4>
-          <p>Each time you take your aligners out, rinse them with room-temperature water to wash away saliva and plaque before storing or reinserting.</p>
-        </div>
-        <div class="card">
-          <h4>Clean twice a day</h4>
-          <p>Clean your aligners twice a day with a soft toothbrush and a little mild soap. Skip toothpaste — it's abrasive and dulls the plastic.</p>
-        </div>
-        <div class="card">
-          <h4>Deep clean if discoloured</h4>
-          <p>Only if they look heavily discoloured, soak them in an aligner cleaning-tablet solution for about 15 minutes (optional). An ultrasonic cleaner also works well.</p>
-        </div>
-        <div class="card">
-          <h4>Brush before reinserting</h4>
-          <p>When you can, brush and floss after every meal or snack before putting your aligners back in. If you can't brush right away, at least rinse your mouth and aligners with water first.</p>
-        </div>
-        <div class="card">
-          <h4>Use your chewies</h4>
-          <p>Bite on your chewies every time you put a tray in, and again for a few minutes morning and night. This seats the aligners fully against your teeth and makes treatment more effective.</p>
-        </div>
-        <div class="card">
-          <h4>Store in the case</h4>
-          <p>Always keep your aligners and chewies in their case when they're out — never wrap them in a napkin, where they're easily lost or thrown away.</p>
-        </div>
-        <div class="card">
-          <h4>A little soreness is normal</h4>
-          <p>It's normal for a new set to feel tight or mildly sore for a day or two as your teeth move — this is part of the process and settles quickly.</p>
-        </div>
-      </div>
-
-      <div class="callout callout--warn reveal">
-        <strong>Never use hot water.</strong> Heat warps the plastic and ruins the fit. Skip coloured mouthwash, denture cleaners not made for aligners, and abrasive toothpaste — they cause staining and cloudiness.
-      </div>
-    </div>
-  </section>
-
   <!-- ===================== FOOD ===================== -->
-  <section class="section" id="food">
+  <section class="section section--alt" id="food">
     <div class="container">
       <div class="section__head reveal">
         <div class="badge" aria-hidden="true">
@@ -312,7 +211,7 @@
   </section>
 
   <!-- ===================== EMERGENCIES ===================== -->
-  <section class="section section--alt" id="emergencies">
+  <section class="section" id="emergencies">
     <div class="container">
       <div class="section__head reveal">
         <div class="badge" aria-hidden="true">
@@ -322,7 +221,6 @@
         <p class="section__lead">True orthodontic emergencies are rare. Most issues can wait until office hours — here's how to stay comfortable in the meantime.</p>
       </div>
 
-      <h3 class="subhead reveal">With braces</h3>
       <div class="grid grid--3 reveal">
         <div class="card">
           <h4>Poking wire</h4>
@@ -345,20 +243,8 @@
           <p>Try floss, an interdental brush, or a water flosser. Don't use anything sharp against your teeth.</p>
         </div>
         <div class="card">
-          <h4>Something you can't fix</h4>
-          <p>When in doubt, don't force it — call the office and we'll guide you through it.</p>
-        </div>
-      </div>
-
-      <h3 class="subhead reveal">With aligners</h3>
-      <div class="grid grid--3 reveal">
-        <div class="card">
-          <h4>Lost or broken aligner</h4>
-          <p>Go back to your <strong>previous</strong> set to hold your progress, then call us. Don't skip ahead to the next set without checking first.</p>
-        </div>
-        <div class="card">
-          <h4>Losing track</h4>
-          <p>If a gap forms between an aligner and your teeth, it's "losing track". Wear that aligner for longer each day, and use your chewies every time you reinsert it. If the gap is still there after 7 days of diligent wear, contact us.</p>
+          <h4>Button comes off</h4>
+          <p>Buttons are specialised hooks bonded to your teeth for your elastics to hook onto. If a button falls off, contact us so we can have it replaced.</p>
         </div>
       </div>
 
@@ -371,30 +257,6 @@
           <!-- REPLACE: emergency phone & email -->
           <a class="btn btn--primary" href="tel:+61294131446">Call (02) 9413 1446</a>
           <a class="btn btn--ghost" href="mailto:info@sodental.com.au">info@sodental.com.au</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== BROKEN ATTACHMENT ===================== -->
-  <section class="section" id="attachment">
-    <div class="container">
-      <div class="section__head reveal">
-        <div class="badge" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="10" rx="3"/><path d="M9 7V5m6 2V5M9 17v2m6-2v2"/></svg>
-        </div>
-        <h2>If an attachment or button comes off</h2>
-        <p class="section__lead">Attachments and buttons are tiny add-ons bonded to your teeth to help your treatment work. If one comes loose it's usually not an emergency — here's what each is and what to do.</p>
-      </div>
-
-      <div class="grid grid--2 reveal">
-        <div class="card">
-          <h3>Attachment breaks</h3>
-          <p>Attachments are small tooth-coloured "bumps" bonded to some teeth, giving your aligners something to grip so they can move your teeth precisely. They occasionally come off — most often in the first few days after bonding. Don't worry: keep wearing your aligners full-time as normal and contact us to arrange a quick re-bond — it's not urgent.</p>
-        </div>
-        <div class="card">
-          <h3>Button comes off</h3>
-          <p>Buttons are specialised hooks bonded to your teeth for your elastics to hook onto. If a button falls off, contact us so we can have it replaced.</p>
         </div>
       </div>
     </div>
@@ -450,6 +312,7 @@
           <a href="tel:+61294131446">(02) 9413 1446</a> · <a href="mailto:info@sodental.com.au">info@sodental.com.au</a>
         </p>
       </div>
+      <p class="footer__contact"><a href="aligners.html">Clear Aligners</a> · <a href="implants.html">Dental Implants</a> · <a href="extraction.html">Tooth Extraction</a> · <a href="perio.html">Periodontal Care</a></p>
       <p class="footer__note">This guide offers general information and is not a substitute for advice from your dentist or orthodontist. If you're unsure about anything, please call the office.</p>
       <p class="footer__copy">© <span id="year"></span> So Dental. All rights reserved.</p>
     </div>

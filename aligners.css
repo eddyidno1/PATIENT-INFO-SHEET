@@ -1,0 +1,34 @@
+/* ===================================================================
+   Clear Aligners page theme — Rose / Pink with gradient flourishes
+   Loaded after styles.css. Distinct from braces-blue, implants-teal,
+   extraction-coral, perio-violet. Site is dark-only.
+   =================================================================== */
+
+:root {
+  --accent: #f472b6;
+  --accent-dark: #f9a8d4;
+}
+
+.hero { background: radial-gradient(circle at 50% 0%, #3a1030 0%, var(--bg) 55%); }
+.hero__eyebrow { color: var(--accent); }
+.hero__title {
+  color: #f472b6;
+  background: linear-gradient(115deg, #f472b6 0%, #e879f9 55%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.badge {
+  background: linear-gradient(135deg, #f472b6, #e879f9);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(244, 114, 182, 0.28);
+}
+
+.btn--primary { background: linear-gradient(135deg, #ec4899, #d946ef); }
+.btn--primary:hover { background: linear-gradient(135deg, #db2777, #c026d3); }
+
+.steps__num,
+.timeline__marker { background: linear-gradient(135deg, #f472b6, #e879f9); }
+
+.callout--emergency .callout__label { color: #f9a8d4; }

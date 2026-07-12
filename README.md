@@ -5,8 +5,11 @@ A modern, Apple-style patient education site for So Dental. Two cross-linked pag
 - **Dental implant post-op** guide (`implants.html`, healing-teal theme)
 
 ## Files
-- `index.html` — braces & aligners page (English)
-- `index-zh.html` — Traditional Chinese (繁體中文) translation of the braces & aligners page; **EN / 中文** toggle switches between them
+- `index.html` — Braces care page (English, blue theme) — the site home
+- `index-zh.html` — Traditional Chinese (繁體中文) Braces page; **EN / 中文** toggle switches between them
+- `braces.css` — blue theme (gradient flourishes) loaded after `styles.css` on both braces pages
+- `aligners.html` / `aligners-zh.html` — Clear Aligners care page + Traditional Chinese version (rose/pink theme)
+- `aligners.css` — rose/pink theme override loaded after `styles.css` on both aligner pages
 - `implants.html` — dental implant post-op page (Day 1 care, comfort & swelling, diet & hygiene, warning signs, soft-food shopping list, healing timeline)
 - `implants-zh.html` — Traditional Chinese (繁體中文) translation of the implant page; an **EN / 中文** toggle in the nav switches between the two
 - `extraction.html` — tooth-extraction aftercare page (warm-coral theme): protect the clot, first 24–48h, routine-vs-wisdom comparison table, eating, recovery timeline, warning signs
@@ -15,7 +18,7 @@ A modern, Apple-style patient education site for So Dental. Two cross-linked pag
 - `perio.html` / `perio-zh.html` — periodontal (gum) aftercare page + Traditional Chinese version (violet theme, left-aligned editorial layout): first 24h, diet, phased hygiene routine, normal-vs-warning split panel, long-term maintenance
 - `perio.css` — royal-violet theme override + `.phase` and `.split` layout components (loaded after `styles.css` on both perio pages)
 
-All four treatment guides (braces, implants, extractions, perio) cross-link to each other from the top nav, and each has an EN / 中文 (繁體中文) version.
+All five treatment guides (braces, clear aligners, implants, extractions, perio) cross-link to each other via the **Treatments** dropdown in the top nav, and each has an EN / 中文 (繁體中文) version.
 - `styles.css` — shared styling (Apple-inspired, light + dark mode, responsive) driving both pages
 - `implants.css` — small theme override loaded after `styles.css` on the implants page (teal color tokens only)
 - `app.js` — shared: smooth scroll reveal, mobile menu toggle, footer year (used by both pages)

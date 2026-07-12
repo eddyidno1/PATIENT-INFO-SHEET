@@ -1,0 +1,31 @@
+/* ===================================================================
+   Braces page theme — Blue with gradient flourishes
+   Loaded after styles.css. Site is dark-only, so values suit the dark bg.
+   =================================================================== */
+
+:root {
+  --accent: #2b8fff;
+  --accent-dark: #4aa3ff;
+}
+
+.hero { background: radial-gradient(circle at 50% 0%, #10233f 0%, var(--bg) 55%); }
+.hero__eyebrow { color: var(--accent); }
+.hero__title {
+  color: #2b8fff;
+  background: linear-gradient(115deg, #2b8fff 0%, #4aa3ff 45%, #7cc0ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.badge {
+  background: linear-gradient(135deg, #2b8fff, #5aa9ff);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(43, 143, 255, 0.28);
+}
+
+.btn--primary { background: linear-gradient(135deg, #2b8fff, #3f97ff); }
+.btn--primary:hover { background: linear-gradient(135deg, #1f7ff0, #2f8bf5); }
+
+.steps__num,
+.timeline__marker { background: linear-gradient(135deg, #2b8fff, #5aa9ff); }
