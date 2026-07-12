@@ -41,27 +41,20 @@
 
 .callout--emergency .callout__label { color: #d9b6ff; }
 
-/* ===================== LEFT-ALIGNED EDITORIAL HEADERS ===================== */
-/* Distinct from the centered headers on the other three guides. */
-.section__head {
-  text-align: left;
-  max-width: 760px;
-  margin-left: 0;
-  margin-right: 0;
-}
-.section__head .badge { margin: 0 0 18px; }
+/* ===================== CENTERED HEADERS WITH ACCENT UNDERLINE ===================== */
+/* Centered like the other guides, with a subtle violet underline accent. */
 .section__head h2 { position: relative; padding-bottom: 14px; }
 .section__head h2::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
   width: 56px;
   height: 3px;
   border-radius: 3px;
   background: linear-gradient(90deg, #7c3aed, #d6409f);
 }
-.subhead { text-align: left; }
 
 /* ===================== PHASE COMPONENT (hygiene timeline) ===================== */
 .phase { display: grid; gap: 20px; max-width: 960px; }
