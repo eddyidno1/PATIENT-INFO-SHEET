@@ -558,14 +558,11 @@ a { color: inherit; text-decoration: none; }
     border-top: 1px solid var(--border);
     font-size: 16px;
   }
-  /* Treatments dropdown expands inline within the mobile menu */
+  /* Mobile hamburger shows the treatments list only — hide in-page section
+     anchors and the "Treatments" label; the dropdown is forced open by JS. */
+  .nav__links > a { display: none; }
   .tdrop { display: block; }
-  .tdrop > summary {
-    padding: 16px 22px;
-    border-top: 1px solid var(--border);
-    font-size: 16px;
-    justify-content: space-between;
-  }
+  .tdrop > summary { display: none; }
   .tdrop__menu {
     position: static;
     min-width: 0;
@@ -577,10 +574,10 @@ a { color: inherit; text-decoration: none; }
     gap: 0;
   }
   .nav__links .tdrop__menu a {
-    padding: 14px 22px 14px 40px;
+    padding: 16px 22px;
     border-radius: 0;
     border-top: 1px solid var(--border);
-    font-size: 15px;
+    font-size: 16px;
   }
   .nav__links .tdrop__menu a.is-current { background: transparent; }
   .nav__toggle.is-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }

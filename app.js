@@ -20,14 +20,25 @@ links.querySelectorAll('a').forEach((a) => {
   });
 });
 
-// ===== Treatments dropdown: close on outside click or Escape =====
+// ===== Treatments dropdown =====
+// On mobile the hamburger lists the treatments directly, so force the
+// dropdown open; on desktop it's a click-to-open popover.
+const mqMobile = window.matchMedia('(max-width: 720px)');
+function syncTreatments() {
+  document.querySelectorAll('.tdrop').forEach((d) => { d.open = mqMobile.matches; });
+}
+syncTreatments();
+mqMobile.addEventListener('change', syncTreatments);
+
+// Desktop only: close the popover on outside click or Escape.
 document.addEventListener('click', (e) => {
+  if (mqMobile.matches) return;
   document.querySelectorAll('.tdrop[open]').forEach((d) => {
     if (!d.contains(e.target)) d.removeAttribute('open');
   });
 });
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
+  if (e.key === 'Escape' && !mqMobile.matches) {
     document.querySelectorAll('.tdrop[open]').forEach((d) => d.removeAttribute('open'));
   }
 });
