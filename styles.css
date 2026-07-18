@@ -519,6 +519,9 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 720px) {
   .nav__toggle { display: flex; }
+  /* .nav__links goes absolute below, leaving .nav__actions the only in-flow
+     child — push it to the right so the toggle + hamburger stay top-right. */
+  .nav__actions { margin-left: auto; }
   .nav__links {
     position: absolute;
     top: 52px;
